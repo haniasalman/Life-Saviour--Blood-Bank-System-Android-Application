@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Life Saviour</string>
+    <!--    <string name="google_maps_api_key">AIzaSyBNmkC9zG1xUwYRROvKBMYMEKipkoOwm28</string>-->
+
+    <string-array name="gender">
+        <item>Select your gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="Blood_Group">
+        <item>Select your blood group</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+
+    <string name="aboutus">Blood Donation is one of a Divine Karma not everyone is able to do.
+        With development in medicine technology, more and more requirement of blood to handle complex and simple situations in medical science has aroused almost to 3 times than what it used to be before industrial revolution
+        . In a land of 1.2 billion people it is ridiculous to say we can not meet the requirements.
+        "The problem is not insufficient number of donors, but finding a willing donor at the right time.
+    </string>
+    <string name="title_activity_search_blood_banks">Map</string>
+    <string name="search_blood_banks">Search Blood</string>
+
+    <string name="noti_quote">"And whoever saves one, it is as if he had saved mankind entirely!"</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_find_donor">Find Donor</string>
+</resources>

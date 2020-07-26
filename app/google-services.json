@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "51231205065",
+    "firebase_url": "https://refreshing-park-272015.firebaseio.com",
+    "project_id": "refreshing-park-272015",
+    "storage_bucket": "refreshing-park-272015.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51231205065:android:d5c6ca07dc56f0835a8f18",
+        "android_client_info": {
+          "package_name": "com.example.lifesaviour"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "51231205065-hr7st9alq5aub0egs4oq67pa1amsh163.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lifesaviour",
+            "certificate_hash": "b3d056a2ba434c8df277c48206570dad68acc286"
+          }
+        },
+        {
+          "client_id": "51231205065-r0rge71p8125h5ljq2eldcnh9mog0oqk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSjRm4E4x0-yuQiaGtY1u8GsLWPc5n9E8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "51231205065-r0rge71p8125h5ljq2eldcnh9mog0oqk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

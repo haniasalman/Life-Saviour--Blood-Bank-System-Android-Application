@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#EAEAEA"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:scrollbarStyle="outsideOverlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDonor">
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="157dp"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/image_logo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/adddonor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Name:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"/>
+            <EditText
+                android:layout_marginLeft="52dp"
+                android:id="@+id/input_fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your Name"
+                android:inputType="text"
+                android:textColor="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/fe_male_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/male_rb"
+                android:layout_marginLeft="50dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:id="@+id/female_rb"
+                android:layout_marginLeft="20dp"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blood Group:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <Spinner
+                android:layout_marginLeft="13dp"
+                android:id="@+id/inputBloodGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/Blood_Group">
+
+            </Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact No:"
+                android:textColor="@color/colorPrimaryDark" />
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:id="@+id/inputMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter correct mobile no."
+                android:inputType="number"
+                android:textColor="@color/colorPrimaryDark"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address:"
+                android:textColor="@color/colorPrimaryDark" />
+            <EditText
+                android:layout_marginLeft="40dp"
+                android:id="@+id/inputAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter full correct Address"
+                android:inputType="text"
+                android:textColor="@color/colorPrimaryDark"  />
+        </LinearLayout>
+
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/button_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:background="@color/colorPrimary"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="#ffff"
+            android:onClick="register_button"/>
+
+    </LinearLayout>
+
+</ScrollView>

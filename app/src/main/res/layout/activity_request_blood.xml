@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequestBlood"
+    android:background="#EAEAEA"
+    android:paddingTop="25dp">
+
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/requestblood" />
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Name:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"/>
+            <EditText
+                android:layout_marginLeft="52dp"
+                android:id="@+id/input_fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your Name"
+                android:inputType="text"
+                android:textColor="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blood Group:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <Spinner
+                android:layout_marginLeft="13dp"
+                android:id="@+id/inputBloodGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/Blood_Group">
+
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Blood Units:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"/>
+            <EditText
+                android:layout_marginLeft="30dp"
+                android:id="@+id/input_blood_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter blood units required"
+                android:inputType="number"
+                android:textColor="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details:"
+                android:paddingRight="30dp"
+                android:textColor="@color/colorPrimaryDark" />
+            <ScrollView
+                android:id="@+id/ScrollView01"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:id="@+id/inputDetail"
+                android:layout_width="match_parent"
+                android:hint="Enter Details"
+                android:layout_height="90dp"
+                android:inputType="text|textMultiLine"
+                android:textColor="@color/colorPrimaryDark" />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact No:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:layout_marginLeft="20dp"
+                android:id="@+id/inputMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter correct mobile no."
+                android:inputType="number"
+                android:textColor="@color/colorPrimaryDark"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Date:"
+                android:layout_marginRight="60dp"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/inputDate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Enter date."
+                android:layout_marginRight="60dp"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <ImageButton
+                android:id="@+id/date_Picker"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/colorPrimary"
+                android:text="Pick Date"
+                android:src="@drawable/calende"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location:"
+                android:textColor="@color/colorPrimaryDark" />
+            <EditText
+                android:layout_marginLeft="40dp"
+                android:id="@+id/inputLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter correct location/name"
+                android:inputType="text"
+                android:textColor="@color/colorPrimaryDark"  />
+        </LinearLayout>
+
+
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/button_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"
+            android:background="@color/colorPrimary"
+            android:text="  Post Request  "
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="post_button"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
