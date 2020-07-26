@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Life Saviour</string>
-    <!--    <string name="google_maps_api_key">AIzaSyBNmkC9zG1xUwYRROvKBMYMEKipkoOwm28</string>-->
 
     <string-array name="gender">
         <item>Select your gender</item>
